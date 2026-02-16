@@ -84,7 +84,7 @@ export default function Navbar() {
             Login
           </a> 
           */}
-          <a href="/get-started" className="hidden bg-[#2e8b57] text-white rounded-md px-5 py-2 text-[13px] font-semibold hover:bg-[#3a8f5c] hover:-translate-y-px transition-all shadow-sm md:block">
+          <a href="/contact" className="hidden bg-[#2e8b57] text-white rounded-md px-5 py-2 text-[13px] font-semibold hover:bg-[#3a8f5c] hover:-translate-y-px transition-all shadow-sm md:block">
             Get Started
           </a>
           <button

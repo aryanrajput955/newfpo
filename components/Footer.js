@@ -12,8 +12,8 @@ export default function Footer() {
     <footer className="relative bg-[#1b3a5c] px-4 py-8 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-white/10">
       <ul className="flex flex-wrap justify-center md:justify-start gap-5 list-none m-0 p-0">
         <li>
-          <a href="/" className="flex items-center gap-1 text-white text-[13px] font-medium hover:opacity-80 transition-opacity">
-            <Home size={14} /> Home
+          <a href="/" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">
+             Home
           </a>
         </li>
         <li>

@@ -145,7 +145,7 @@ const Counter = () => {
               We bridge the gap between farmers and technology, ensuring better yields, fair prices, and a sustainable future for rural India.
             </p>
             <a
-              href="https://fpoconnect.org/#eco-tourism"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-white text-[#2e8b57] rounded-full text-base font-bold shadow-lg hover:bg-green-50 hover:-translate-y-1 transition-all duration-300"
