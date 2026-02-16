@@ -26,11 +26,13 @@ export default function LandingPage() {
       {/* ===== NAVBAR ===== */}
       <nav className="flex items-center justify-between px-4 py-3 md:px-10 bg-[#1b3a5c] sticky top-0 z-50">
         <a href="/" className="flex items-center gap-2.5 no-underline">
-          <div className="w-[38px] h-[38px] rounded-full bg-white flex items-center justify-center font-extrabold text-[13px] text-[#1b3a5c] tracking-tighter shrink-0">
-            fpO
-          </div>
+          <img 
+            src="/logo.jpeg" 
+            alt="FpoConnect India Logo" 
+            className="w-[38px] h-[38px] rounded-xl p-[0.5px] object-cover shrink-0 bg-white" 
+          />
           <div className="text-white text-base font-semibold whitespace-nowrap">
-            fpO<span className="font-light">connect India Pvt. Ltd.</span>
+            FpoConnect India
           </div>
         </a>
 
@@ -297,8 +299,8 @@ export default function LandingPage() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="bg-[#1b3a5c] px-4 py-4 md:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
-        <ul className="flex flex-wrap justify-center gap-5 list-none m-0 p-0">
+      <footer className="relative bg-[#1b3a5c] px-4 py-4 md:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <ul className="flex flex-wrap justify-center md:justify-start gap-5 list-none m-0 p-0">
           <li>
             <a href="/" className="flex items-center gap-1 text-white text-[13px] font-medium hover:opacity-80 transition-opacity">
               <Home size={14} /> Home
@@ -317,6 +319,11 @@ export default function LandingPage() {
             <a href="/contact" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Contact</a>
           </li>
         </ul>
+       
+        <div className="text-white text-[13px] font-light opacity-80 text-center md:absolute md:left-1/2 md:-translate-x-1/2 w-full md:w-auto">
+            © by FPOConnect India Pvt Ltd.
+        </div>
+
         <div className="flex items-center gap-2.5">
           <a href="#" className="w-8 h-8 rounded-md bg-white/15 flex items-center justify-center text-white transition-all hover:bg-white/25 hover:-translate-y-px" aria-label="Facebook">
             <Facebook size={16} />
