@@ -145,7 +145,7 @@ const FPOSection = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="/catalog"
+            href="https://fpcl.in"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[#e8632b] text-white text-lg font-bold rounded-full shadow-lg shadow-[#e8632b]/30 hover:bg-[#d4551f] hover:-translate-y-1 transition-all"
           >
             <span>Explore All FPO Members</span>

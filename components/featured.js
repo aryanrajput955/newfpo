@@ -71,7 +71,7 @@ const Featured = () => {
             WHY CHOOSE US
           </span>
           <h2 className="text-4xl font-serif font-normal text-[#122a44] sm:text-5xl md:text-6xl mb-6">
-            Why Partner with FPCL?
+            Why Partner with FPO?
           </h2>
           <p className="mx-auto max-w-[800px] text-lg text-[#5a6a7a] md:text-xl font-medium leading-relaxed">
             Empowering Indian farmers with innovative B2B agricultural solutions for sustainable growth and success.
@@ -100,23 +100,7 @@ const Featured = () => {
           ))}
         </div>
 
-        {/* CENTRAL CTA BUTTON */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
-          className="flex justify-center"
-        >
-          <Link
-            href="https://fpoconnect.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center gap-2 px-10 py-4 bg-[#e8632b] text-white rounded-full text-lg font-bold shadow-lg shadow-[#e8632b]/30 hover:bg-[#d4551f] hover:-translate-y-1 transition-all duration-300"
-          >
-            <span>Explore FPO Connect</span>
-            <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-          </Link>
-        </motion.div>
+
       </div>
     </section>
   );

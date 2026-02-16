@@ -19,16 +19,15 @@ export default function LandingPage() {
         <div className="relative z-10 max-w-[1400px] mx-auto px-4 py-10 md:px-6 md:py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="max-w-full lg:max-w-[520px] text-left animate-in fade-in slide-in-from-bottom-5 duration-700">
             <h1 className="font-serif text-[32px] md:text-5xl font-normal leading-[1.15] text-[#122a44] mb-5 drop-shadow-sm">
-              Empowering FPOs for a
+             India’s Digital Operating System for Farmer
               <br />
-              Sustainable Rural Future
+               Producer Organisations
             </h1>
             <p className="text-base md:text-lg text-[#1a1a2e] leading-relaxed mb-8 font-medium drop-shadow-sm">
-              Integrated Solutions for Digital Infra, Agri Trade, & Farm
-              Tourism.
+             Integrating Governance, Agri-Trade, Value Chains & Rural Enterprise on a Unified Digital Stack
             </p>
             <a 
-              href="#services" 
+              href="/services" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2e8b57] text-white rounded-lg text-[15px] font-semibold shadow-lg shadow-[#2e8b57]/30 hover:bg-[#3a8f5c] hover:-translate-y-0.5 transition-all"
             >
               Explore Our Ecosystem
