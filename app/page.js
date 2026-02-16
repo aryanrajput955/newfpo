@@ -1,12 +1,12 @@
 import {
   CheckCircle2,
-  ShieldCheck,
-  TrendingUp,
-  MailOpen,
   Monitor,
   ShoppingCart,
   TreePine,
 } from "lucide-react";
+import Featured from "@/components/featured";
+import Counter from "@/components/counter";
+import FPOSection from "@/components/fposection";
 
 export default function LandingPage() {
   return (
@@ -47,7 +47,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===== SERVICE CARDS ===== */}
-      <section className="px-5 py-10 md:px-10 md:py-12 max-w-[1200px] mx-auto bg-white/50 backdrop-blur-sm -mt-6 md:-mt-12 relative z-20 rounded-t-3xl border-t border-white/20">
+      <section id="services" className="px-5 py-10 md:px-10 md:py-12 max-w-[1200px] mx-auto bg-white/50 backdrop-blur-sm -mt-6 md:-mt-12 relative z-20 rounded-t-3xl border-t border-white/20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card 1: fpcl.in */}
           <div className="group rounded-2xl p-7 border border-[#c5dfc9] hover:border-transparent bg-linear-to-br from-[#eaf6ee] to-[#d7ede0] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
@@ -144,24 +144,14 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== WHY CHOOSE SECTION ===== */}
-      <section className="px-10 py-10 md:py-16 max-w-[1200px] mx-auto text-center border-t border-[#e0e6ec] mt-8 bg-white">
-        <h2 className="font-serif text-[28px] md:text-3xl font-normal text-[#122a44] mb-10">Why Choose fpOconnect India?</h2>
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-          <div className="flex items-center gap-3 text-[15px] text-[#1a1a2e] font-medium group">
-            <ShieldCheck size={40} className="text-[#1b3a5c] group-hover:scale-110 transition-transform" />
-            <span>Trusted by 500+ FPOs</span>
-          </div>
-          <div className="flex items-center gap-3 text-[15px] text-[#1a1a2e] font-medium group">
-            <TrendingUp size={40} className="text-[#1b3a5c] group-hover:scale-110 transition-transform" />
-            <span>Diversified Revenue Streams</span>
-          </div>
-          <div className="flex items-center gap-3 text-[15px] text-[#1a1a2e] font-medium group">
-            <MailOpen size={40} className="text-[#1b3a5c] group-hover:scale-110 transition-transform" />
-            <span>Expert Advisory Support</span>
-          </div>
-        </div>
-      </section>
+      {/* ===== FEATURED SECTION ===== */}
+      <Featured />
+
+      {/* ===== COUNTER SECTION ===== */}
+      <Counter />
+
+      {/* ===== FPO SECTION ===== */}
+      <FPOSection />
 
       {/* ===== PARTNERS SECTION ===== */}
       <section className="px-5 py-8 md:pb-16 max-w-[1200px] mx-auto text-center bg-white">

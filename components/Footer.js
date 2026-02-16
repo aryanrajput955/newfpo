@@ -22,9 +22,11 @@ export default function Footer() {
         <li>
           <a href="/services" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Services</a>
         </li>
+        {/* 
         <li>
           <a href="/blog" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Blog</a>
-        </li>
+        </li> 
+        */}
         <li>
           <a href="/contact" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Contact</a>
         </li>
