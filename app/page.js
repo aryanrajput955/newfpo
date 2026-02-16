@@ -1,123 +1,16 @@
-"use client";
-
-import { useState } from "react";
 import {
-  ChevronDown,
   CheckCircle2,
   ShieldCheck,
   TrendingUp,
   MailOpen,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Menu,
-  X,
-  Home,
   Monitor,
   ShoppingCart,
   TreePine,
-  Phone,
-  Mail,
 } from "lucide-react";
 
 export default function LandingPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="font-sans text-[#1a1a2e] bg-white overflow-x-hidden">
-      {/* ===== TOP BAR (Desktop) ===== */}
-      <div className="hidden md:flex justify-end items-center gap-6 bg-[#132c45] text-white/80 py-1.5 px-10 text-[11px] font-medium tracking-wide">
-        <a href="tel:9897891511" className="flex items-center gap-1.5 hover:text-white transition-colors">
-          <Phone size={12} /> +91 98978 91511
-        </a>
-        <a href="mailto:info@fpoconnect.org" className="flex items-center gap-1.5 hover:text-white transition-colors">
-          <Mail size={12} /> info@fpoconnect.org
-        </a>
-      </div>
-
-      {/* ===== NAVBAR ===== */}
-      <nav className="flex items-center justify-between px-4 py-3 md:px-10 bg-[#1b3a5c] sticky top-0 z-50 shadow-md">
-        <a href="/" className="flex items-center gap-2.5 no-underline">
-          <img 
-            src="/logo.jpeg" 
-            alt="FpoConnect India Logo" 
-            className="w-[38px] h-[38px] rounded-xl p-[0.5px] object-cover shrink-0 bg-white" 
-          />
-          <div className="text-white text-base font-semibold whitespace-nowrap">
-            FpoConnect India
-          </div>
-        </a>
-
-        {/* Desktop Nav Links */}
-        <ul className="hidden lg:flex items-center gap-7 list-none">
-          <li>
-            <a href="/" className="text-white text-sm font-medium hover:opacity-85 border-b-2 border-white pb-0.5">Home</a>
-          </li>
-          <li>
-            <a href="/about" className="text-white text-sm font-medium hover:opacity-85 transition-opacity">About Us</a>
-          </li>
-          <li>
-            <a href="/services" className="text-white text-sm font-medium hover:opacity-85 transition-opacity flex items-center gap-1">
-              Services <ChevronDown size={14} />
-            </a>
-          </li>
-          <li>
-            <a href="/blog" className="text-white text-sm font-medium hover:opacity-85 transition-opacity">Blog</a>
-          </li>
-          <li>
-            <a href="/contact" className="text-white text-sm font-medium hover:opacity-85 transition-opacity">Contact</a>
-          </li>
-        </ul>
-
-        {/* Nav Buttons */}
-        <div className="flex items-center gap-3">
-          <a href="/login" className="hidden border-[1.5px] border-white rounded-md text-white bg-transparent px-5 py-1.5 text-[13px] font-semibold hover:bg-white/10 transition-all md:block">
-            Login
-          </a>
-          <a href="/get-started" className="hidden bg-[#2e8b57] text-white rounded-md px-5 py-2 text-[13px] font-semibold hover:bg-[#3a8f5c] hover:-translate-y-px transition-all shadow-sm md:block">
-            Get Started
-          </a>
-          <button
-            className="flex flex-col gap-[5px] p-1 bg-none border-none cursor-pointer lg:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? (
-              <X size={24} className="text-white" />
-            ) : (
-              <Menu size={24} className="text-white" />
-            )}
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="bg-[#1b3a5c] px-5 py-4 flex flex-col gap-3 sticky top-[56px] z-40 lg:hidden border-t border-white/10 shadow-xl">
-          {["Home", "About Us", "Services", "Blog", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`/${item.toLowerCase().replace(" ", "-")}`}
-              className="text-white text-[15px] font-medium py-2 border-b border-white/10 hover:text-white/80"
-            >
-              {item}
-            </a>
-          ))}
-          <a href="/login" className="text-white text-[15px] font-semibold py-2.5 border-b border-white/10">
-            Login
-          </a>
-          {/* Mobile Contact Info */}
-          <div className="flex flex-col gap-3 pt-3 mt-1">
-            <a href="tel:9897891511" className="flex items-center gap-2 text-white/80 text-[13px]">
-              <Phone size={14} /> +91 98978 91511
-            </a>
-            <a href="mailto:info@fpoconnect.org" className="flex items-center gap-2 text-white/80 text-[13px]">
-              <Mail size={14} /> info@fpoconnect.org
-            </a>
-          </div>
-        </div>
-      )}
-
       {/* ===== HERO SECTION ===== */}
       <section className="relative min-h-[600px] md:min-h-[550px] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/hero-mobile.jpg')] md:bg-[url('/hero-desktop.jpg')]">
         {/* Background Gradient Overlay */}
@@ -318,55 +211,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
-      {/* ===== FOOTER ===== */}
-      <footer className="relative bg-[#1b3a5c] px-4 py-8 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-white/10">
-        <ul className="flex flex-wrap justify-center md:justify-start gap-5 list-none m-0 p-0">
-          <li>
-            <a href="/" className="flex items-center gap-1 text-white text-[13px] font-medium hover:opacity-80 transition-opacity">
-              <Home size={14} /> Home
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">About Us</a>
-          </li>
-          <li>
-            <a href="/services" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Services</a>
-          </li>
-          <li>
-            <a href="/blog" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Blog</a>
-          </li>
-          <li>
-            <a href="/contact" className="text-white text-[13px] font-medium hover:opacity-80 transition-opacity">Contact</a>
-          </li>
-        </ul>
-       
-        <div className="text-white text-[13px] font-light opacity-80 text-center md:absolute md:left-1/2 md:-translate-x-1/2 w-full md:w-auto mt-2 md:mt-0">
-            © by FPOConnect India Pvt Ltd.
-        </div>
-
-        <div className="flex flex-col items-center gap-3 md:flex-row md:items-center md:gap-6">
-            <div className="flex items-center gap-4 text-white/70 text-[12px]">
-                <a href="tel:9897891511" className="flex items-center gap-1.5 hover:text-white transition-opacity">
-                    <Phone size={13} /> +91 98978 91511
-                </a>
-                <a href="mailto:info@fpoconnect.org" className="flex items-center gap-1.5 hover:text-white transition-opacity">
-                    <Mail size={13} /> info@fpoconnect.org
-                </a>
-            </div>
-            <div className="flex items-center gap-2.5">
-            <a href="#" className="w-8 h-8 rounded-md bg-white/15 flex items-center justify-center text-white transition-all hover:bg-white/25 hover:-translate-y-px" aria-label="Facebook">
-                <Facebook size={16} />
-            </a>
-            <a href="#" className="w-8 h-8 rounded-md bg-white/15 flex items-center justify-center text-white transition-all hover:bg-white/25 hover:-translate-y-px" aria-label="Twitter">
-                <Twitter size={16} />
-            </a>
-            <a href="#" className="w-8 h-8 rounded-md bg-white/15 flex items-center justify-center text-white transition-all hover:bg-white/25 hover:-translate-y-px" aria-label="LinkedIn">
-                <Linkedin size={16} />
-            </a>
-            </div>
-        </div>
-      </footer>
     </div>
   );
 }
